@@ -6,27 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Añadir Terapia</title>
-    <link rel="stylesheet" href="../css/sytyle_form.css">
+    <link rel="stylesheet" href="../css/style_form.css">
     <script src="../js/script.js|"></script>
-    <script src="../js/jquery.js"></script>
+
 </head>
 
 <body>
-    <div id="container">
-        <h1>&bull; Añadir Terapia &bull;</h1>
-        <div class="underline"></div>
+    <!--Menú-->
+    <section>
+        <div class="container">
 
-        <form action="#" method="POST" id="alta_form" action="../index.html" enctype="multipart/form-data">
-            <div class="icon_wrapper">
-                <input type="date" id="start" name="trip-start" value="2021-03-26" min="2021-01-01" max="2021-12-31">
-            </div>
-            <div class="paciente">
-                <label for="name"></label>
-                <input type="text" placeholder="Nombre del Paciente" id="paciente" required>
-            </div>
-            <div class="terapia">
-                <label for="terapia"></label>
-                <select id="terapia" name="terapias">
+
+            <!--Tableros-->
+            <div id="container">
+                <h1>&bull; Añadir Terapia &bull;</h1>
+                <div class="underline"></div>
+
+                <form action="#" method="POST" id="alta_form" action="../index.html" enctype="multipart/form-data">
+                    <div class="icon_wrapper">
+                        <input type="date" id="start" name="trip-start" value="2021-03-26" min="2021-01-01" max="2021-12-31">
+                    </div>
+                    <div class="paciente">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Nombre del Paciente" id="paciente" required>
+                    </div>
+                    <div class="terapia">
+                        <label for="terapia"></label>
+                        <select id="terapia" name="terapias">
                     <option value="" selected disabled>seleccione la terapia</option>
                     <option value="psico">psicologia</option>
                     <option value="fono">fonoaudiologia</option>
@@ -34,28 +40,28 @@
                     <option value="psicomo">psicomotricidad</option>
                     <option value="psicope">psicopedagogía</option>
                   </select>
-            </div>
+                    </div>
 
-            <div class="consultorio">
-                <label for="consultrio"></label>
-                <select id="terapia" name="terapias">
+                    <div class="consultorio">
+                        <label for="consultrio"></label>
+                        <select id="terapia" name="terapias">
                     <option value="" selected disabled>reserve consultorio</option>
                     <option value="consultorio1">consultorio 1</option>
                     <option value="consultorio2">consultorio 2</option>
                     <option value="consultorio3">consultorio 3</option>
                     <option value="consultorio4">consultorio 4</option>
                   </select>
-                <div class="title-layout">layout</div>
-                <!--                <div class="layout-icon"><span class="icon-zero"></span></div> -->
-                <div class="layout">
-                    <img src="../img/cetem_layout.png" usemap="#workmap" width="220" height="320">
-                </div>
-                <!-- -->
-            </div>
+                        <div class="title-layout">layout</div>
+                        <!--                <div class="layout-icon"><span class="icon-zero"></span></div> -->
+                        <div class="layout">
+                            <img src="../img/cetem_layout.png" usemap="#workmap" width="220" height="320">
+                        </div>
+                        <!-- -->
+                    </div>
 
-            <div class="terapia">
-                <label for="subject"></label>
-                <select placeholder="Subject line" name="sesiones" id="sesiones" required>
+                    <div class="terapia">
+                        <label for="subject"></label>
+                        <select placeholder="Subject line" name="sesiones" id="sesiones" required>
                     <option disabled hidden selected>obra social</option>
                     <option>Galeno</option>
                     <option>Apsot</option> 
@@ -68,27 +74,25 @@
                     <option>Osdipp</option>
                     <option>--Particular--</option>
             </select>
-            </div>
-            <div class="message">
-                <label for="message"></label>
-                <textarea name="message" placeholder="Notas/particularidades" id="message_input" cols="30" rows="5" required></textarea>
-            </div>
-            <div class="submit">
-                <input type="submit" value="Guardar" id="form_button" />
-            </div>
+                    </div>
+                    <div class="message">
+                        <label for="message"></label>
+                        <textarea name="message" placeholder="Notas/particularidades" id="message_input" cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Guardar" id="form_button" />
+                    </div>
 
-            <!--
-			<form class="login-form" action="./auth/control.php" method="POST" enctype="multipart/form-data">
-				<input type="text" placeholder="usuario" name="usuario" value=""/>
-				<input type="password" placeholder="contraseña" name="contraseña" value=""/>
-				<button>login</button>
-			</form>
+                </form>
+                <!-- // End form -->
+            </div>
+            <!-- // End #container -->
 
--->
-        </form>
-        <!-- // End form -->
-    </div>
-    <!-- // End #container -->
+
+        </div>
+    </section>
+
+    </main>
 
 </body>
 
